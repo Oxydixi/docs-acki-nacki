@@ -1,0 +1,2179 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../overview/">
+      
+      
+        <link rel="next" href="../../working-with-gosh/anytree/">
+      
+      
+      <link rel="icon" href="../../images/gosh2.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+    
+    
+      
+        <title>User Guide - ACKI NACKI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M6 13h8l-3.5 3.5 1.42 1.42L17.84 12l-5.92-5.92L10.5 7.5 14 11H6v2Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="light-blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#user-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ACKI NACKI" class="md-header__button md-logo" aria-label="ACKI NACKI" data-md-component="logo">
+      
+  <img src="../../images/gosh2.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ACKI NACKI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              User Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Acki Nacki
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../on-chain-architecture/gosh-wallet/" class="md-tabs__link">
+          
+  
+  Wallets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acki-nacki/connection-to-network/quick-start-tvm-cli/" class="md-tabs__link">
+          
+  
+  For developers
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../acki-nacki/info/" class="md-tabs__link">
+          
+  
+  For validators
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../on-chain-architecture/organizations-gosh-dao-and-smv/" class="md-tabs__link">
+          
+  
+  Products
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ACKI NACKI" class="md-nav__button md-logo" aria-label="ACKI NACKI" data-md-component="logo">
+      
+  <img src="../../images/gosh2.svg" alt="logo">
+
+    </a>
+    ACKI NACKI
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Acki Nacki
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Acki Nacki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Why acki-nacki?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Wallets
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Wallets
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../on-chain-architecture/gosh-wallet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GOSH Wallet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    For developers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            For developers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection to network
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Connection to network
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/connection-to-network/quick-start-tvm-cli/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick start for TVM CLI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/connection-to-network/quick-start-tvm-sdk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick start for TVM SDK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/connection-to-network/create-and-compile-contract/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create and compile contract
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/connection-to-network/create-giver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create giver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    For validators
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            For validators
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Connection to network
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Connection to network
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acki-nacki/info/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Products
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Products
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GOSH
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            GOSH
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_1" id="__nav_5_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    On-chain Architecture
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            On-chain Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../on-chain-architecture/organizations-gosh-dao-and-smv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Organizations - GOSH DAO and SMV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../on-chain-architecture/gosh-smart-contracts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GOSH smart contracts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/grh-config/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set up Git Remote Helper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_2" id="__nav_5_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interacting with GOSH
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Interacting with GOSH
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_2_1" id="__nav_5_1_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GOSH Web
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            GOSH Web
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Account
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_2_1_2" id="__nav_5_1_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DAO
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_5_1_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            DAO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/create-dao/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create DAO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/dao-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DAO Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/proposals-and-voting-in-smv/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Proposals and voting in SMV
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/working-with-tokens-and-karma/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Working with tokens and Karma
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/repository/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Repository
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Members
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/task/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/gosh-web/dao-set-up/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/docker-extension/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Docker Extension
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/sync/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GOSH GitHub Sync
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/git-remote-helper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git Remote Helper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3" id="__nav_5_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3_1" id="__nav_5_1_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hacks & Grants
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Hacks & Grants
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hackathon" class="md-nav__link">
+    Hackathon
+  </a>
+  
+    <nav class="md-nav" aria-label="Hackathon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-the-organizers" class="md-nav__link">
+    for the organizers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-participants" class="md-nav__link">
+    for participants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-tags" class="md-nav__link">
+    Expert Tags
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant-program" class="md-nav__link">
+    Grant Program
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3_2" id="__nav_5_1_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    AnyTree
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            AnyTree
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/anytree/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AnyTree
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../working-with-gosh/anytree-firewall-for-telepresence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AnyTree Firewall for Telepresence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_3_3" id="__nav_5_1_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integrity Credits
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Integrity Credits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrity-credits/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrity-credits/user-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_4" id="__nav_5_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GOSH Ethereum L2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            GOSH Ethereum L2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethereum-L2/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethereum-L2/user-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integrations/l2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hackathon" class="md-nav__link">
+    Hackathon
+  </a>
+  
+    <nav class="md-nav" aria-label="Hackathon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-the-organizers" class="md-nav__link">
+    for the organizers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-participants" class="md-nav__link">
+    for participants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expert-tags" class="md-nav__link">
+    Expert Tags
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant-program" class="md-nav__link">
+    Grant Program
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="user-guide"><strong>User Guide</strong></h1>
+<h2 id="hackathon">Hackathon</h2>
+<h3 id="for-the-organizers"><strong>for the organizers</strong></h3>
+<div class="admonition warning">
+<p class="admonition-title">important</p>
+<ul>
+<li>
+<p>To create a Hackathon, you must be a member of the DAO.</p>
+</li>
+<li>
+<p>The DAO must have enough tokens in its reserve to allocate towards Hackathon rewards.</p>
+</li>
+<li>
+<p>The experts who will be part of the jury for the Hackathon must be registered participants of the DAO before the event commences.</p>
+</li>
+</ul>
+</div>
+<p>To create a <strong>Hackathon</strong>, you need to navigate to the <strong>"Hacks &amp; Grants"</strong> tab in the DAO where you are a member.</p>
+<p>Make sure to check the guidelines and requirements of the DAO to ensure that you have the necessary permissions and resources to host the Hackathon.</p>
+<p><img alt="" src="../../images/H%26G_hacks_1_dao_h%26g_tab.jpg" /></p>
+<p>and click <strong>Create new</strong> or start typing the name of the your Hackathon</p>
+<p><img alt="" src="../../images/H%26G_hacks_2_create_new_name.jpg" /></p>
+<p>then click <strong>New hackaton</strong></p>
+<p><strong>On the page that opens, enter all the necessary  information about the event:</strong></p>
+<ul>
+<li>In the <strong>README</strong> section tell the about your program. What are its aims? Who should participate? How will it work?</li>
+</ul>
+<p><img alt="" src="../../images/H%26G_hacks_3_readme.jpg" /></p>
+<ul>
+<li>In the <strong>RULES</strong> section, describe the rules that the participants should follow. What is expected, allowed and strictly prohibited?</li>
+</ul>
+<p><img alt="" src="../../images/H%26G_hacks_5_rulles.jpg" /></p>
+<ul>
+<li>In the <strong>PRIZES</strong> section, it is important to outline of the awards will be distributed among the participants. Additionally, it is crucial to explain the evaluation criteria used to determine the winners.</li>
+</ul>
+<p>Also here you have the opportunity to provide detailed information about any additional prizes that will be available to participants. This can be a great way to encourage engagement and encourage people to participate in your event or program.</p>
+<!-- TODO when will the opportunity be supported in dollars -->
+<!-- ![](../images/H&G_hacks_6_prizes.jpg) -->
+
+<p><img alt="" src="../../images/H%26G_hacks_6_prizes_dao-tokens_.jpg" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>It is not mandatory to provide information in the README, RULES, and PRICES sections, but including them can greatly improve the clarity and informativeness of your content. Therefore, we recommend filling them out whenever possible.</p>
+</div>
+<ul>
+<li>Also, the information about the awards must be configured in the <strong>Prize pool</strong> section by clicking on the <strong>"Add prize pool"</strong> button.</li>
+</ul>
+<p><img alt="" src="../../images/H%26G_hacks_7_pool_prizes.jpg" /></p>
+<p>Enter the total amount of the prize pool and distribute it among the prize places.</p>
+<p>Then click <strong>Save distribution</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The total amount of the prize fund cannot exceed the amount of the DAO reserve balance.</p>
+</div>
+<!-- TODO when will the opportunity be supported in dollars... -->
+
+<p><img alt="" src="../../images/H%26G_hacks_8_setup_prize_pool.jpg" /></p>
+<!-- !!! info
+    Until the prize fund is put up, the Hackathon will be in the Draft status -->
+
+<p>To make any changes, simply click on the "Update prize pool" button.</p>
+<p><img alt="" src="../../images/H%26G_hacks_9_update_prize_pool.jpg" /></p>
+<ul>
+<li>Don't forget to fill in the <strong>Short Description</strong> section. This information will be visible in the proposal for voting on the creation of the Hackathon after all the necessary data has been filled about the event.</li>
+</ul>
+<p><img alt="" src="../../images/H%26G_hacks_4_shot_description.jpg" /></p>
+<ul>
+<li>You will need to set the date and time for three important stages.<br />
+Do this by clicking on the <strong>Add date</strong> button</li>
+</ul>
+<p><img alt="" src="../../images/H%26G_hacks_10_time.jpg" /></p>
+<p>and in the window that opens, configure on 3 tabs:</p>
+<p><strong>Start</strong> tab - here you need to set the start date and time of the Hackathon.</p>
+<p><strong>Voting</strong> tab - here you need to set the date and time when the acceptance of applications ends, and when they will be presented to the jury members for voting.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>After the start of the voting stage, it will be impossible to add new participants.</p>
+</div>
+<p><strong>Finish</strong> tab - you need to set the date and time when the voting stage ends and the winners will be determined.<br />
+Then click <strong>Apply dates</strong></p>
+<p><img alt="" src="../../images/H%26G_hacks_11_time_set.jpg" /></p>
+<p>In the <a href="./#expert-tags"><strong>Export tags</strong></a> section, select all the necessary scope for which expert assessments are required.</p>
+<p><img alt="" src="../../images/H%26G_hacks_11_1_add_expert_tags.jpg" /></p>
+<p>Once you've set the dates and times, you can click on <strong>Create proposal to publish</strong></p>
+<p><img alt="" src="../../images/H%26G_hacks_12_create_proposal_to_publish.jpg" /></p>
+<!-- TODO change when change data
+![](../images/H&G_hacks_12_create_proposal_to_publish.jpg) -->
+
+<p>The preparation of the Hackathon repository and the creation of a proposal for its creation will begin.</p>
+<p>And once it's done, you will be redirected to the DAO events page. </p>
+<p><img alt="" src="../../images/H%26G_hacks_13_proposal.jpg" /></p>
+<p>Once the voting process is completed with a positive outcome, a Hackathon will be created.</p>
+<p><img alt="" src="../../images/H%26G_hacks_14_hacks_created.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">important</p>
+<p><strong>After the Hackathon is created, its data can be changed and any alterations are subject to voting for approval.</strong></p>
+</div>
+<p><img alt="" src="../../images/H%26G_hacks_15_edit.jpg" /></p>
+<!-- 
+![](../images/H&G_hacks_15_4.jpg)
+![](../images/H&G_hacks_15_3.jpg)
+![](../images/H&G_hacks_15_2_edit.jpg)
+ -->
+
+<p>To be aware of the status of the Hackathon, the time remaining until the next stage will be displayed on its page.</p>
+<p><img alt="" src="../../images/H%26G_hacks_22_time_to_voting_stage.jpg" /></p>
+<p>When the application acceptance stage comes to an end, the <strong><code>Voting</code></strong> stage will begin.</p>
+<p><img alt="" src="../../images/H%26G_hacks_23_time_to_finish_stage.jpg" /></p>
+<p>At the end of the <strong><code>Voting</code></strong> stage, the summing up will start, and the Hackathon will be marked as <strong><code>Finished</code></strong></p>
+<p><img alt="" src="../../images/H%26G_hacks_24_finish_stage.jpg" /></p>
+<h3 id="for-participants"><strong>for participants</strong></h3>
+<p><strong>If you're a GOSH user</strong> who is interested in participating in a Hackathon, you'll need to visit the Hackathon organizer's DAO. Once there, you can navigate to the <strong>"Hacks and Grants"</strong> tab to learn more about the available Hackathons and select the one that interests you.</p>
+<p>On the Hackathon page you will find all the necessary information, including a detailed description of the Hackathon, its rules and prizes that can be obtained.</p>
+<p><strong>If you're not a GOSH user</strong> but want to participate in the Hackathon, you'll need to <a href="../../working-with-gosh/gosh-web/account/"><strong>create an GOSH account</strong></a> first.<br />
+Then you can visit the Hackathon page to get started.</p>
+<p>During the Hackathon, all participants must complete certain tasks and then upload them to their <a href="../../working-with-gosh/gosh-web/repository/">repositories</a> into their <a href="../../working-with-gosh/gosh-web/create-dao/">DAO</a>.</p>
+<p>To participate in the Hackathon, you'll need to click on the <strong>Add application</strong> button.</p>
+<p><img alt="" src="../../images/H%26G_hacks_16_for_partic_add_aplic.jpg" /></p>
+<div class="admonition info">
+<p class="admonition-title">If you followed the direct link to the Hackathon</p>
+<p>then be sure to log into your account by clicking on the <strong>Sign in</strong> button.  </p>
+<p><!-- <img alt="Image title" src="../images/H&amp;G_hacks_17_sign_in_.jpg" />{ align=right } -->
+<img alt="" src="../../images/H%26G_hacks_17_sign_in_.jpg" /></p>
+<p class="ml-params">After you entered your passphrase and PIN code on the Hackathon page, the next step is to click on the <strong>Add application</strong> button.</p>
+</div>
+<!-- ![](../images/H&G_hacks_18_add_1.jpg) -->
+
+<p>Then, in the form that opens, click <strong>Add application form DAO</strong></p>
+<p><img alt="" src="../../images/H%26G_hacks_18_add_2.jpg" /></p>
+<p>and enter the name of your DAO and the name of the repository that you require.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<ul>
+<li>
+<p>You can <strong>add an application</strong> <strong>only</strong> from the <strong>DAO</strong> of which you are a <strong>member</strong>.</p>
+</li>
+<li>
+<p>Also, keep in mind that <strong>each repository</strong> is a <strong>separate participant</strong> of the Hackathon.</p>
+</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can add multiple repositories from one DAO at once by separating the input with a space.</p>
+</div>
+<!-- Do this for all the DAOs you need to participate in the Hackathon, and then click ** Submit applications** -->
+
+<p>Once you have added all the necessary applications, click on "Submit applications".</p>
+<p><img alt="" src="../../images/H%26G_hacks_19_add_DAO_repos.jpg" /></p>
+<p>At the end of the process, all the repositories you have uploaded will be displayed in the "Your applications" section.  </p>
+<p><img alt="" src="../../images/H%26G_hacks_20_your_applics.jpg" /></p>
+<p>Additionally, you can view information about the other participants of the Hackathon in the "Participants" section.</p>
+<p><img alt="" src="../../images/H%26G_hacks_21_all_partica.jpg" /></p>
+<!-- The remaining time until the next stage will be displayed on the Hackathon page, allowing participants to stay updated on the status of the competition. -->
+
+<p>To keep participants updated on the status of the competition, the remaining time until the next stage will be displayed on the Hackathon page.</p>
+<p><img alt="" src="../../images/H%26G_hacks_22_time_to_voting_stage.jpg" /></p>
+<p>When the application acceptance stage comes to an end, the <strong><code>Voting</code></strong> stage will begin.</p>
+<p><img alt="" src="../../images/H%26G_hacks_23_time_to_finish_stage.jpg" /></p>
+<p>At the end of the <strong><code>Voting</code></strong> stage, the summing up will start, and the Hackathon will be marked as <strong><code>Finished</code></strong></p>
+<p><img alt="" src="../../images/H%26G_hacks_24_finish_stage.jpg" /></p>
+<h3 id="expert-tags"><strong>Expert Tags</strong></h3>
+<!-- TODO
+remove into settings & rename KARMA tags-->
+
+<p>Expert Tags are created as evidence of the member's expertise and experience within this DAO.  </p>
+<p>By creating and attaching Tags to DAO members, you can count on their skills and experience to help other members of the DAO.</p>
+<p>Tags affect the number of votes that the expert will be able to use when voting.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>If a DAO member has an attached Expert Tag, then when voting, he will be able to use tokens within his Karma, increased by the coefficient specified when creating this Tag.</p>
+</div>
+<p>Tags will make it easier to find a performer to complete a Task or review it.</p>
+<p>Using expert tags when judging at Hackathons will allow you to take into account the weight of each expert's vote when voting for projects, which reduces the likelihood of a subjective impact of each expert's assessment on the final result and reduces the possibility of manipulation by the jury, i.e. judging will be more objective and independent of each other.</p>
+<p>If you want to add expert Tags to your DAO simply go to the <strong>Settings</strong> tab in the <strong>karma Tags</strong> section and enter the name of the Tag in the appropriate field. </p>
+<p>You can also specify the percentage by which the karma of the relevant expert will be increased when voting. It's important to note that the experts of the jury must be participants of the DAO before the Hackathon begins.</p>
+<p>To delete a Tag, click on the cross in the corresponding line.</p>
+<p>The addition of expert Tags can only be made possible through the voting of the DAO members. Therefore, you must leave a comment for the proposal and then click on the <strong>Save changes and create proposal</strong> button to initiate the process.</p>
+<p><img alt="" src="../../images/H%26G_hacks_expert_tags_1_new_tag.jpg" /></p>
+<p>You will redirected to the event page in the DAO tab. Now you can proceed with voting.</p>
+<p><img alt="" src="../../images/H%26G_hacks_expert_tags_2_proposal.jpg" /></p>
+<p>Any changes to the karma Tags of the DAO will be accepted through the vote.</p>
+<p>After the proposal is accepted, on the "Members" tab, you have the ability to assign Expert Tags to DAO members based on their experience.</p>
+<p>To assign Expert Tags to DAO members based on their experience, you'll need to navigate to the <strong>Members</strong> tab. </p>
+<p>Once there, you can select the appropriate Tag from the drop-down list and assign it to the respective member.<br />
+This is a great way to highlight the skills and expertise of your DAO members and make it easier for others to identify who to turn to for specific tasks or advice.</p>
+<p>Please make sure to include a detailed description of the proposal regarding changes in allowances for members.<br />
+It is important to provide all the necessary information for members of DAO to make informed decisions making the voting process.</p>
+<p>Then click on the <strong>Save changes and create proposal</strong> button:</p>
+<p><img alt="" src="../../images/H%26G_hacks_expert_tags_3_members.jpg" /></p>
+<p>You will redirected to the event page in the DAO tab. Now you can proceed with voting.</p>
+<p><img alt="" src="../../images/H%26G_hacks_expert_tags_4_vote_karma_tags.jpg" /></p>
+<p>Expert Tags will be assigned to DAO members after the proposal is accepted and they will be able to use them for work.</p>
+<h2 id="grant-program">Grant Program</h2>
+<p><em>coming soon</em></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "content.code.copy", "content.tooltips"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

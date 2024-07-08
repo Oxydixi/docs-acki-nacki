@@ -1,0 +1,7 @@
+[**Integrity Credits**](https://www.integritycredits.com) is the connector for a nature-positive economic models and value chains.
+
+A nature-positive economic model represents a transformative approach to economic planning and development, focusing on the conservation, restoration, and sustainable use of natural resources. This model aims to achieve a harmonious balance where economic growth contributes to rather than detracts from the natural environment. It involves integrating biodiversity and ecosystem services into economic systems and decision-making processes, ensuring that natural capital is preserved and enhanced.
+
+The platform provides a comprehensive solution that ensures the security and integrity of the entire value chain. This encompasses key processes such as registration, decentralized scientific peer review, Monitoring, Reporting, and Verification (MRV), data collection, credit issuance, registration, and trading. By guaranteeing that each stage is secure, transparent, and unalterable, the technology enhances the trustworthiness and integrity of the biodiversity credits
+
+Each initiative/project is governed by a ([**DAO**](https://docs.gosh.sh/on-chain-architecture/organizations-gosh-dao-and-smv/#dao)) on the blockchain ensuring traceability and integrity of any nature asset.
