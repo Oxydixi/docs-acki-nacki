@@ -98,6 +98,9 @@ theme:
   icon:
     annotation: material/arrow-right-circle
 
+docs_dir: src
+site_dir: docs
+
 extra_css:
   - stylesheets/extra.css
 
